@@ -11,8 +11,11 @@ class Footer extends React.Component {
                     <a href=''>WhatsApp</a>
                     <a href=''>Facebook</a>
                 </div>
-                <p>Copyright@2025</p>
-                <p>ITB-FLIX Yeneviel Roberts</p>
+                <div className="texto-footer">
+                    <p>Copyright@2025</p>
+                    <p>ITB-FLIX Yeneviel Roberts</p>
+                </div>
+                
             </div>
         )
     }
