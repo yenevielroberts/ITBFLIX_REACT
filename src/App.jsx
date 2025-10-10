@@ -2,9 +2,9 @@ import React  from 'react'
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import Footer from './Footer'
-import Header from './Header'
-import SeccionesCotenido from './SeccionesContenido'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import SeccionesCotenido from './components/SeccionesContenido'
 import './css/App.css'
 
 

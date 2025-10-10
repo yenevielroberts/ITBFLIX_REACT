@@ -5,7 +5,7 @@ class Header extends React.Component{
     render(){
 
         return(
-            <div className='header'>
+            <header>
                 <div className='header-logo'>
                     <img src="logo"></img>
                 </div>
@@ -16,7 +16,7 @@ class Header extends React.Component{
                  <a href=''>Contact</a>
                  <a href=''>Login</a>
                 </div>
-            </div>
+            </header>
         )
     }
 }

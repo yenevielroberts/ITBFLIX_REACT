@@ -5,7 +5,7 @@ class Footer extends React.Component {
     render() {
 
         return (
-            <div className="footer">
+            <footer>
                 <div className="redes-sociales">
                     <a href=''>Instagram</a>
                     <a href=''>WhatsApp</a>
@@ -16,7 +16,7 @@ class Footer extends React.Component {
                     <p>ITB-FLIX Yeneviel Roberts</p>
                 </div>
                 
-            </div>
+            </footer>
         )
     }
 }
