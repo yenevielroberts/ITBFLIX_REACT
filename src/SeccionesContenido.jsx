@@ -1,5 +1,5 @@
 import React from 'react';
-import './SeccionesContenido.css'
+import './css/SeccionesContenido.css'
 
 class SeccionesCotenido extends React.Component{
     render(){

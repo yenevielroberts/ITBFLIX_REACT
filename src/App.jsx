@@ -5,7 +5,7 @@ import viteLogo from '/vite.svg'
 import Footer from './Footer'
 import Header from './Header'
 import SeccionesCotenido from './SeccionesContenido'
-import './App.css'
+import './css/App.css'
 
 
 
