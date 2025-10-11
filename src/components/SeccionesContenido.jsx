@@ -1,5 +1,4 @@
 import React, { createElement } from 'react';
-import '../css/SeccionesContenido.css'
 
 class SeccionesCotenido extends React.Component {
     render() {
