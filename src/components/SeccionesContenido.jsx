@@ -6,13 +6,13 @@ class SeccionesCotenido extends React.Component {
         const { imagenes } = this.props;
         const arrayImagenes = imagenes.map((imagen, index) => (
 
-            <div className='foto' key={index}>
-                <img src={imagen} />
+            <div className='foto' key={index} >
+                <img src={imagen}/>
             </div>
         ));
 
         return (
-            <section className={this.props.titleSection}>
+            <section className={this.props.titleSection} >
                 <h2>{this.props.titleSection}</h2>
                 {arrayImagenes}
             </section>

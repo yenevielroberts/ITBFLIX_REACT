@@ -47,7 +47,7 @@ class App extends React.Component {
 
           return (
 
-            <div key={index} className='secciones'>
+            <div key={index} className='secciones' >
               <SeccionesCotenido
                 titleSection="Series"
                 imagenes={seccion.series}
