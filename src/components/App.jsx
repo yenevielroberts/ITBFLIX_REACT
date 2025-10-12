@@ -19,6 +19,7 @@ class App extends React.Component {
           'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
           'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
           'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
+          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
           'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg'
         ],
         peliculas: [
@@ -26,9 +27,11 @@ class App extends React.Component {
           'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
           'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
           'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
+          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
           'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg'
         ],
         actores: [
+          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
           'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
           'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
           'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
