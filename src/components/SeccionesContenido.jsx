@@ -26,7 +26,7 @@ class SeccionesCotenido extends React.Component {
 
                 </div>
 
-                <div className='fotos' class=" flex flex-wrap ml-4">
+                <div className='fotos' class=" flex flex-wrap ml-4 justify-evenly">
                     {arrayImagenes}
                 </div>
             </section>
