@@ -6,7 +6,7 @@ class SeccionesCotenido extends React.Component {
         const { imagenes } = this.props;
         const arrayImagenes = imagenes.map((imagen, index) => (
 
-            <div className='foto' key={index} class="mr-1 p-2">
+            <div className='foto' key={index} class="mr-1 p-2 hover:ring-4 ring-white">
                 <img src={imagen} class="max-w-56 max-h-56"/>
             </div>
         ));
