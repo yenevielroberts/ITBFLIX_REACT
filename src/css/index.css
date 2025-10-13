@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+header{
+    @apply bg-blue-900 mb-36 h-28 flex
+}
+.header-enlaces{
+    @apply p-2 w-full flex justify-evenly items-center 
+}
+
+.icon_enlace{
+
+    @apply flex flex-col items-center
+}
+a{
+    @apply mr-4
+}
+
+.imgLogo{
+    @apply w-36 h-28 mr-16
+}
+
+/*Footer*/
+
+footer{
+    @apply bg-blue-900 flex flex-col items-center max-w-full h-32 
+}
+.redes-sociales{
+    @apply flex flex-row mb-6
+}
+
+.texto-footer{
+ @apply w-full flex flex-row 
+}
+
+.nameOrganización{
+    @apply justify-end
+}
+.copyright{
+    @apply  w-full flex justify-center items-center
+}

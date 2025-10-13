@@ -12,8 +12,8 @@ class Footer extends React.Component {
                     <a href=''>Facebook</a>
                 </div>
                 <div className="texto-footer">
-                    <p>Copyright@2025</p>
-                    <p>ITB-FLIX Yeneviel Roberts</p>
+                    <p className="copyright">Copyright@2025</p>
+                    <p className="nameOrganización">ITB-FLIX Yeneviel Roberts</p>
                 </div>
                 
             </footer>
