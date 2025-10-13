@@ -4,13 +4,29 @@ class SeccionesCotenido extends React.Component {
     render() {
 
         const { imagenes } = this.props;
-        const arrayImagenes = imagenes.map((imagen, index) => (
+        const { titleSection } = this.props;
 
-            /*Contenedor indivual de las imagenes */
-            <div className='foto' key={index} class="mb-10 mt-5 rounded-xl hover:ring-4 ring-white">
-                <img src={imagen} class="max-w-56 max-h-56 rounded-xl" />
-            </div>
-        ));
+        let arrayImagenes = [];
+        if (titleSection == "Actores") {
+
+             arrayImagenes = imagenes.map((imagen, index) => (
+
+                /*Contenedor indivual de las imagenes */
+                <div className='foto' key={index} class="mb-10 mt-5 rounded-xl hover:ring-4 ring-white">
+                    <img src={imagen} class="max-w-56 max-h-56 rounded-full object-cover" />
+                </div>
+            ));
+
+        } else {
+            arrayImagenes = imagenes.map((imagen, index) => (
+
+                /*Contenedor indivual de las imagenes */
+                <div className='foto' key={index} class="mb-10 mt-5 rounded-xl hover:ring-4 ring-white">
+                    <img src={imagen} class="max-w-56 max-h-56 rounded-xl" />
+                </div>
+            ));
+        }
+
 
         return (
             <section className={this.props.titleSection} class="flex-col mb-36 w-screen h-fit sm:h-fit bg-blue-900  " >
