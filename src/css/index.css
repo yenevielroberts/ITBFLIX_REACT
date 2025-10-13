@@ -4,7 +4,7 @@
 
 
 header{
-    @apply bg-blue-900 mb-36 h-28 flex
+    @apply bg-blue-900 mb-36 h-28 flex w-screen 
 }
 .header-enlaces{
     @apply p-2 w-full flex justify-evenly items-center 
@@ -25,19 +25,13 @@ a{
 /*Footer*/
 
 footer{
-    @apply bg-blue-900 flex flex-col items-center max-w-full h-32 
+    @apply bg-blue-900 flex flex-col justify-center items-center w-screen h-32 
 }
-.redes-sociales{
-    @apply flex flex-row mb-6
-}
+
 
 .texto-footer{
- @apply w-full flex flex-row 
+ @apply w-screen  flex flex-col justify-center items-center
 }
 
-.nameOrganización{
-    @apply justify-end
-}
-.copyright{
-    @apply  w-full flex justify-center items-center
-}
+
+
