@@ -14,29 +14,21 @@ class App extends React.Component {
 
     const imagenes = [
       {
-        series: [
-          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
-          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
-          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
-          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
-          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
-          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg'
-        ],
+        series: ['/img/series/community.jpg', '/img/series/houseposter.jpg', '/img/series/shadowandbone.jpg', '/img/series/thelastkingdom.jpg', '/img/series/TheOutpost.jpg', '/img/series/theresident.jpg', '/img/series/travelers.jpg', '/img/series/blacklightning.png'],
         peliculas: [
-          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
-          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
-          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
-          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
-          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
-          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg'
+          '/img/peliculas/catchmeifyoucan.jpg', '/img/peliculas/littlewomen.jpg', '/img/peliculas/elpadrino.jpg', '/img/peliculas/nowyouseeme.jpg', '/img/peliculas/Oppenheimer.jpg', '/img/peliculas/the king.png', '/img/peliculas/shadowhunters.jpg', '/img/peliculas/Mortalengines.jpg'
+
         ],
         actores: [
-          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
-          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
-          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
-          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
-          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg',
-          'https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg'
+          '/img/actores/alexanderDreymon.png',
+          '/img/actores/emilyblunt.webp',
+          '/img/actores/chinaann.png',
+          '/img/actores/saoirseronan.png',
+          '/img/actores/nafessawilliams.png'
+        ],
+        masvisto: [
+          '/img/peliculas/nowyouseeme.jpg', '/img/series/TheOutpost.jpg',
+          '/img/series/houseposter.jpg','/img/series/blacklightning.png','/img/series/travelers.jpg','/img/peliculas/littlewomen.jpg','/img/peliculas/elpadrino.jpg'
         ]
       }
     ]
@@ -46,32 +38,34 @@ class App extends React.Component {
 
         <Header />
         {//Reat necesita una forma de identificar cada elemento de forma unica dentro de una lista
-        imagenes.map((seccion, index) => {
+          imagenes.map((seccion, index) => {
 
-          return (
+            return (
 
-            <div key={index} className='secciones' >
-              <SeccionesCotenido
-                titleSection="Series"
-                imagenes={seccion.series}
-              />
-              <SeccionesCotenido
-                titleSection='Películas'
-                imagenes={seccion.peliculas}
-              />
-              <SeccionesCotenido
-                titleSection='Actores'
-                imagenes={seccion.actores}
-              />
-            </div>
-          )
+              <div key={index} className='secciones' >
+                <SeccionesCotenido
+                  titleSection="Series"
+                  imagenes={seccion.series}
+                />
+                <SeccionesCotenido
+                  titleSection='Películas'
+                  imagenes={seccion.peliculas}
+                />
+                <SeccionesCotenido
+                  titleSection='Actores'
+                  imagenes={seccion.actores}
+                />
 
-        })}
+                <SeccionesCotenido
+                  titleSection='Más visto'
+                  imagenes={seccion.masvisto}
+                />
+              </div>
+            )
 
-        <SeccionesCotenido
-          titleSection='Más visto'
-          imagenes={['https://m.media-amazon.com/images/S/pv-target-images/acbc04447a8403b46c707776047f14eff2f261c52f7f7f9e30e0d7c87bd03334.jpg']}
-        />
+          })}
+
+
 
         <Footer />
       </div>
