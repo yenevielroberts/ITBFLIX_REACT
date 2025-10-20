@@ -3,35 +3,3 @@
 @tailwind utilities;
 
 
-header{
-    @apply bg-blue-900 mb-36 h-28 flex w-screen 
-}
-.header-enlaces{
-    @apply p-2 w-full flex justify-evenly items-center 
-}
-
-.icon_enlace{
-
-    @apply flex flex-col items-center
-}
-a{
-    @apply mr-4
-}
-
-.imgLogo{
-    @apply w-36 h-28 mr-16
-}
-
-/*Footer*/
-
-footer{
-    @apply bg-blue-900 flex flex-col justify-center items-center w-screen h-32 
-}
-
-
-.texto-footer{
- @apply w-screen  flex flex-col justify-center items-center
-}
-
-
-

@@ -5,7 +5,7 @@ class Footer extends React.Component {
     render() {
 
         return (
-            <footer>
+            <footer className="bg-blue-900 flex flex-col justify-center items-center w-screen h-32 ">
                 <div className="redes-sociales" class="flex flex-row">
                     {/**Icon Instagram */}
                     <div class="m-1">
@@ -37,7 +37,7 @@ class Footer extends React.Component {
                     </div>
 
                 </div>
-                <div className="texto-footer">
+                <div className="w-screen  flex flex-col justify-center items-center-footer">
                     <p>ITB-FLIX Yeneviel Roberts</p>
                     <p>Copyright@2025</p>
 
