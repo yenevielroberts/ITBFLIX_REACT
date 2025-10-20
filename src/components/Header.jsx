@@ -20,7 +20,7 @@ class Header extends React.Component {
                     <img src="/logoitbflix.png" className='w-36 h-28 mr-16'></img>
                 </div>
 
-                <div className='p-2 w-full flex justify-evenly items-center ' >
+                <div className='p-2 w-full flex justify-evenly items-center' >
                     {/*enlances del nav */}
                    {iconsNav}
                 </div>

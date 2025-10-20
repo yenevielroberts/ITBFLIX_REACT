@@ -6,10 +6,10 @@ class SeccionesCotenido extends React.Component {
         const { imagenes } = this.props;
         const { titleSection } = this.props;
 
-        let arrayImagenes = [];{/**Array donde se guarda el contenedor individual de la imagenes*/}
+        let arrayImagenes = []; {/**Array donde se guarda el contenedor individual de la imagenes*/ }
         if (titleSection == "Actores") {
 
-             arrayImagenes = imagenes.map((imagen, index) => (
+            arrayImagenes = imagenes.map((imagen, index) => (
 
                 /*Contenedor indivual de las imagenes */
                 <div className='"mb-10 mt-5 rounded-xl hover:ring-4 ring-white"' key={index}>
@@ -22,7 +22,9 @@ class SeccionesCotenido extends React.Component {
 
                 /*Contenedor indivual de las imagenes */
                 <div className="mb-10 mt-5 rounded-xl hover:ring-4 ring-white" key={index} >
-                    <img src={imagen} className="max-w-56 max-h-56 rounded-xl" />
+                    <a href=''>
+                        <img src={imagen} className="max-w-56 max-h-56 rounded-xl" />
+                    </a>
                 </div>
             ));
         }
@@ -36,7 +38,7 @@ class SeccionesCotenido extends React.Component {
                     {/**Icono de flecha */}
                     <div className="flex w-full justify-end mr-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-8
-                     text-white">
+                     text-black ">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                         </svg>
                     </div>
