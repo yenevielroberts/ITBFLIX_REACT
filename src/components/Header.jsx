@@ -8,7 +8,7 @@ class Header extends React.Component {
         const iconsNav = icons.map((icon, index) => (
 
             <div key={index} className='flex flex-col items-center'>
-                <a href='' className='mr-4'  dangerouslySetInnerHTML={{ __html: icon.tag }}/>
+                <a href='' className='mr-4 '  dangerouslySetInnerHTML={{ __html: icon.tag }}/>
                 <p>{icon.name}</p>
             </div>
 
