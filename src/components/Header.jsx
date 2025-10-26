@@ -16,14 +16,17 @@ class Header extends React.Component {
 
         return (
             <header className='bg-blue-900 mb-20 h-28 flex w-screen '>
-                <div className='header-logo'>
+                <nav className=' flex flex-row w-screen'>
+                    <div className='header-logo'>
                     <img src="/logoitbflix.png" className='w-36 h-28 mr-16'></img>
-                </div>
+                    </div>
 
-                <div className='p-2 w-full flex flex-row justify-evenly items-center' >
-                    {/*enlances del nav */}
-                   {iconsNav}
-                </div>
+                    <div className='p-2 w-full flex flex-row justify-evenly items-center' >
+                        {/*enlances del nav */}
+                    {iconsNav}
+                    </div> 
+                </nav>
+              
             </header>
 
         )
