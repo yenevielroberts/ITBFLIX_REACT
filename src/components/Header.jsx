@@ -6,7 +6,7 @@ class Header extends React.Component {
         const { icons } = this.props;
 
         const iconsNav = icons.map((icon, index) => (
-
+          //Contenedor de icon y enlace
             <div key={index} className='flex flex-col items-center'>
                 <a href='' className='mr-4 '  dangerouslySetInnerHTML={{ __html: icon.tag }}/>
                 <p>{icon.name}</p>
@@ -15,7 +15,7 @@ class Header extends React.Component {
         ));
 
         return (
-            <header className='bg-blue-900 mb-36 h-28 flex w-screen '>
+            <header className='bg-blue-900 mb-20 h-28 flex w-screen '>
                 <div className='header-logo'>
                     <img src="/logoitbflix.png" className='w-36 h-28 mr-16'></img>
                 </div>
