@@ -7,7 +7,7 @@ class Header extends React.Component {
 
         const iconsNav = icons.map((icon, index) => (
           //Contenedor de icon y enlace
-            <div key={index} className='flex flex-col items-center'>
+            <div key={index} className='flex flex-col items-center justify-center hover:text-yellow-300'>
                 <a href='' className='mr-4 '  dangerouslySetInnerHTML={{ __html: icon.tag }}/>
                 <p>{icon.name}</p>
             </div>
@@ -20,7 +20,7 @@ class Header extends React.Component {
                     <img src="/logoitbflix.png" className='w-36 h-28 mr-16'></img>
                 </div>
 
-                <div className='p-2 w-full flex justify-evenly items-center' >
+                <div className='p-2 w-full flex flex-row justify-evenly items-center' >
                     {/*enlances del nav */}
                    {iconsNav}
                 </div>
