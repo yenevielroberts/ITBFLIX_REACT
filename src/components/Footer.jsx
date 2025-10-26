@@ -5,7 +5,7 @@ class Footer extends React.Component {
     render() {
 
         const {icons}=this.props;
-        const iconsFooter= icons.map((icon, index)=> (
+        const iconsFooter= icons.map((icon, index)=> (//Itero el array de objectos
                //container para cada icon 
             <div key={index}className="m-1">
                 <a href='' dangerouslySetInnerHTML={{ __html: icon.tag }} >

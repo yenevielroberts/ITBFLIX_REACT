@@ -97,7 +97,7 @@ class App extends React.Component {
       <div>
 
         <Header
-          icons={iconsHeader}
+          icons={iconsHeader}//Paso un array de objectos
         />
 
         {/**Barra de busqueda */}
@@ -122,7 +122,7 @@ class App extends React.Component {
               <div key={index} className='secciones' >
                 <SeccionesCotenido
                   titleSection="Series"
-                  imagenes={seccion.series}
+                  imagenes={seccion.series}//Paso un array
                 />
                 <SeccionesCotenido
                   titleSection='Películas'
@@ -142,7 +142,7 @@ class App extends React.Component {
 
           })}
         <Footer 
-        icons={iconsFooter}
+        icons={iconsFooter}//Paso un array de objectos
         />
       </div>
     )

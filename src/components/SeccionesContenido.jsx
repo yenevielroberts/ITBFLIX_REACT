@@ -3,13 +3,13 @@ import React, { createElement } from 'react';
 class SeccionesCotenido extends React.Component {
     render() {
 
-        const { imagenes } = this.props;
+        const { imagenes } = this.props;//Obtengo los valores de las propiedades
         const { titleSection } = this.props;
 
         let arrayImagenes = []; {/**Array donde se guarda el contenedor individual de la imagenes*/ }
         if (titleSection == "Actores") {
 
-            arrayImagenes = imagenes.map((imagen, index) => (
+            arrayImagenes = imagenes.map((imagen, index) => (//Itero el array de las imagenes que pase en el App.jsx
 
                 /*Contenedor indivual de las imagenes  actores*/
                 <div className="mb-5 mt-5 rounded-xl " key={index}>
