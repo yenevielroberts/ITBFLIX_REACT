@@ -19,7 +19,7 @@ class Footer extends React.Component {
                 <div className="flex flex-row">
                  {iconsFooter}
                 </div>
-                <div className="w-screen  flex flex-col justify-center items-center">
+                <div className=" flex flex-col justify-center items-center">
                     <p>ITB-FLIX Yeneviel Roberts</p>
                     <p>Copyright@2025</p>
                 </div>
