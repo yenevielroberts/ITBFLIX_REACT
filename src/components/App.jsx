@@ -103,13 +103,13 @@ class App extends React.Component {
         {/**Barra de busqueda */}
         <div className="flex w-screen h-20 mb-28 items-center justify-center">
           <form className='flex flex-col w-full items-center justify-center'>
-            <div className='relative w-9/12'>
+            <div className='relative w-full max-w-xl'>
               {/**Icono */}
               <svg className="absolute left-3 top-1/2  transform -translate-y-1/2 w-5 h-5 text-black dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
               </svg>
               {/**input */}
-              <input type="text" id="search" name="search" placeholder='Buscar película o series' className='w-9/12 h-10 rounded-xl pl-12 focus:outline-none focus:ring-2 focus:ring-blue-500' />
+              <input type="text" id="search" name="search" placeholder='Buscar película o series' className='w-full h-10 rounded-xl pl-12 focus:outline-none focus:ring-2 focus:ring-blue-500' />
             </div>
           </form>
         </div>
