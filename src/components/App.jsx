@@ -94,7 +94,7 @@ class App extends React.Component {
 
     return (
 
-      <div>
+      <main>
 
         <Header
           icons={iconsHeader}//Paso un array de objectos
@@ -144,7 +144,7 @@ class App extends React.Component {
         <Footer 
         icons={iconsFooter}//Paso un array de objectos
         />
-      </div>
+      </main>
     )
   }
 }
