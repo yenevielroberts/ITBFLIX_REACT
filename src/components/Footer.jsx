@@ -14,7 +14,7 @@ class Footer extends React.Component {
         ));
 
         return (
-            <footer className="bg-blue-900 flex flex-col justify-center items-center w-screen h-32 ">
+            <footer className="bg-blue-900 flex flex-col justify-center items-center h-32 text-white">
                 {/*Container para juntar los icons */}
                 <div className="flex flex-row">
                  {iconsFooter}

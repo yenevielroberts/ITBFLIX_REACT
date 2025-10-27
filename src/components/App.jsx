@@ -101,7 +101,7 @@ class App extends React.Component {
         />
 
         {/**Barra de busqueda */}
-        <div className="flex w-screen h-20 mb-28 items-center justify-center">
+        <div className="flex  h-20 mb-28 items-center justify-center">
           <form className='flex flex-col w-full items-center justify-center'>
             <div className='relative w-full max-w-xl'>
               {/**Icono */}

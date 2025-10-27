@@ -31,7 +31,7 @@ class SeccionesCotenido extends React.Component {
 
 
         return (
-            <section className="flex-col mb-36 w-screen h-fit sm:h-fit bg-blue-900" >
+            <section className="flex-col mb-36 h-fit sm:h-fit bg-blue-900" >
                 {/**Contenedor del titulo y flecha */}
                 <div className="flex w-full items-center">
                     <h2 className=" mb-2 ml-2 p-3 w-96 text-white font-serif text-2xl">{this.props.titleSection}</h2>

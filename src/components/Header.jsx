@@ -15,8 +15,8 @@ class Header extends React.Component {
         ));
 
         return (
-            <header className='bg-blue-900 mb-20 h-28 flex w-screen '>
-                <nav className=' flex flex-row w-screen'>
+            <header className='bg-blue-900 mb-20 h-28 flex'>
+                <nav className=' flex flex-row w-screen text-white'>
                     {/**Contenedor para el logo */}
                     <div className='header-logo'>
                     <img src="/logoitbflix.png" className='w-36 h-28 mr-16'></img>
