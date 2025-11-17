@@ -1,9 +1,13 @@
 function Contacto(){
 
     return(
-        <>
-            <h1>Contacto</h1>
-        </>
+
+        <div>
+             <h1>Contacto</h1>
+        </div>
+           
+            
+        
     )
 }
 
