@@ -1,4 +1,6 @@
-class News extends React.Component(){
+import React from 'react'
+
+class News extends React.Component{
     
     render(){
          return (
