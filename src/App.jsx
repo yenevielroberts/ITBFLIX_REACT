@@ -4,7 +4,7 @@ import Home from "./components/Home"
 import Contacto from "./components/Contacto"
 import LoginFormulario from './components/login'
 import Lista from './components/Listas'
-import News from './components/paginaNoticias'
+import News from './components/Noticias'
 import Header from './components/Header'
 
 class App extends React.Component{
