@@ -1,5 +1,36 @@
 {
-    "users": [
+    "series": [
+        {"id":1,"name":"Dr.House","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/houseposter.jpg"},
+
+        {"id":2,"name":"Showdow and Bone","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/shadowandbone.jpg"},
+        {"id":3,"name":"The Last Kindom","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/thelastkingdom.jpg"},
+        {"id":4,"name":"The Outpost","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/TheOutpost.jpg"},
+
+        {"id":5,"name":"The resident","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/theresident.jpg"},
+
+        {"id":6,"name":"Travellers","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/travelers.jpg"},
+
+        {"id":7,"name":"Black Lightning","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/blacklightning.png"}
+
+    ],
+     "movies": [
+        {"id":1,"name":"Catch me if you can","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/catchmeifyoucan.jpg"},
+
+        {"id":2,"name":"Little Women","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/littlewomen.jpg"},
+
+        {"id":3,"name":"The Godfather","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/elpadrino.jpg"},
+
+        {"id":4,"name":"Now you see me","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/nowyouseeme.jpg"},
+
+        {"id":5,"name":"Oppenheimer","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/Oppenheimer.jpg"},
+
+        {"id":6,"name":"The King","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/the king.png"},
+
+        {"id":7,"name":"The mortal instruments: City of bones","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/shadowhunters.jpg"},
+
+        {"id":8,"name":"Mortal Engines","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/Mortalengines.jpg"}
+    ],
+     "news": [
         {"id":1,"name":"Yeneviel","email":"yeneviel@gmail.com","password":"yeneviel"}
     ]
 }

@@ -1,7 +1,5 @@
-import { redirect} from 'react-router-dom';
 import data from '../db/users.json'
 import {useState } from 'react'
-import e from 'cors';
 
 
 //Funciones auxiliares
@@ -22,11 +20,11 @@ const LoginFormulario=()=>{
 
 
     /**
-     * errors
+     * displayMessage
      *- Objecto donde cada clave(email, password) puede contener un mensaje de error tipo string.
      *- Si no hay errors para un campo, entonces la clave no existira o tendra un valor nulo
      */
-    const [errors, setErrors]=useState([])
+    const [displayMessage, setDisplayMessage]=useState([])
 
 
     /**
@@ -51,7 +49,7 @@ const LoginFormulario=()=>{
 
         if(message != null){
             // Actualizo el estado de errors de las credenciales:
-            setErrors({['credenciales']:message}) 
+            setDisplayMessage({['credenciales']:message}) 
         }
        
         return message
@@ -60,17 +58,15 @@ const LoginFormulario=()=>{
     /**
      * handleChange
      * - Actualiza el formData por campo
-     * @param {*} userEmail 
-     * @param {*} password 
+     * @param {*} e
      */
-    const handleChange=(userEmail, password)=>{
-    
+    const handleChange=(e)=>{
+        const {name,value}=e.target
         // Actualizo el valor del formulario
         //Hago una copia de los valores previos y tambíen agrego un valor nuevo para [name] que luego se compara con el valor previo y si es diferente se sobreescribe
-        setFormData((prev)=>({...prev,['email']:userEmail}));
-        setFormData((prev)=>({...prev,['password']:password}));
+        setFormData((prev)=>({...prev,[name]:value}));
 
-        setErrors(null);
+        setDisplayMessage(null);
 
     }
    
@@ -90,7 +86,7 @@ const LoginFormulario=()=>{
 
         if(valido==null){
             
-            setErrors({['credenciales']:"Usuario logeado"})
+            setDisplayMessage({['credenciales']:"Usuario logeado"})
         }
     }
 
@@ -98,31 +94,33 @@ const LoginFormulario=()=>{
     const renderInput=(id, label,type="text")=>(
 
         <div>
-            <label htmlFor={id} className=''>
+            <label htmlFor={id} className='mr-2'>
                 {label}
             </label>
-            <input type={type} id={id} name={formData[id]} onChange={handleChange} required/>
+            <input type={type} id={id} name={id} value={formData[id]} onChange={handleChange} required className='m-2 border border-black rounded-lg p-1 '/>
         </div>
     )
 
     return(
 
         <main>
-             <div className="flex justify-center">
-            
-            <div className="flex flex-col bg-white w-6/12 h-96 justify-center items-center rounded-lg">
-                <h1 className="text-2xl">Log in</h1>
-                {errors &&(
-                        <div>
-                            {errors.credenciales}
-                        </div>
-                    )}
-                <form onSubmit={handleSubmit}className="flex flex-col">
-                    {renderInput("userEmail","User email","email")}
-                    {renderInput("userPassword","User password","password")}
-                    <button type='submit'>Log in</button>
-                </form>
-            </div>
+            <div className="flex justify-center">
+                <div className="flex flex-col bg-white w-3/12 h-96  justify-center items-center rounded-lg">
+                    <h1 className="text-2xl justify-start">Log in</h1>
+                        {/**si el objeto submitMessage no es null renderiza */}
+                    {displayMessage &&(
+                            
+                        <div className='m-5 font-bold'>
+                            {displayMessage.credenciales}
+                        </div>    
+
+                     )}
+                    <form onSubmit={handleSubmit}className="flex flex-col justify-center items-center">
+                        {renderInput("userEmail","User email","email")}
+                        {renderInput("userPassword","User password","password")}
+                        <button type='submit'className="border p-1 rounded-lg bg-blue-800 text-white w-20 m-2">Log in</button>
+                    </form>
+                </div>
          </div>
         </main>
     )
