@@ -1,52 +1,13 @@
 import React from 'react'
 import Footer from './Footer'
 import SeccionesCotenido from './SeccionesContenido'
+import data from '../db/data.json'
 import '../css/App.css'
 
 
 class Home extends React.Component {
 
   render() {
-
-    const imagenes = [
-      {
-        series: [
-          '/img/series/houseposter.jpg',
-          '/img/series/shadowandbone.jpg',
-          '/img/series/thelastkingdom.jpg',
-          '/img/series/TheOutpost.jpg',
-          '/img/series/theresident.jpg',
-          '/img/series/travelers.jpg',
-          '/img/series/blacklightning.png'],
-        peliculas: [
-          '/img/peliculas/catchmeifyoucan.jpg',
-          '/img/peliculas/littlewomen.jpg',
-          '/img/peliculas/elpadrino.jpg',
-          '/img/peliculas/nowyouseeme.jpg',
-          '/img/peliculas/Oppenheimer.jpg',
-          '/img/peliculas/the king.png',
-          '/img/peliculas/shadowhunters.jpg',
-          '/img/peliculas/Mortalengines.jpg'
-
-        ],
-        actores: [
-          '/img/actores/alexanderDreymon.png',
-          '/img/actores/emilyblunt.webp',
-          '/img/actores/chinaann.png',
-          '/img/actores/saoirseronan.png',
-          '/img/actores/nafessawilliams.png'
-        ],
-        masvisto: [
-          '/img/peliculas/nowyouseeme.jpg',
-          '/img/series/TheOutpost.jpg',
-          '/img/series/houseposter.jpg',
-          '/img/series/blacklightning.png',
-          '/img/series/travelers.jpg',
-          '/img/peliculas/littlewomen.jpg',
-          '/img/peliculas/elpadrino.jpg'
-        ]
-      }
-    ]
 
     const iconsFooter = [
       {
@@ -80,34 +41,26 @@ class Home extends React.Component {
             </div>
           </form>
         </div>
+        <div className='secciones' >
+            <SeccionesCotenido
+              titleSection="Series"
+              imagenes={data.series}//Paso un array
+            />
+            <SeccionesCotenido
+              titleSection='Películas'
+              imagenes={data.movies}
+            />
+            <SeccionesCotenido
+              titleSection='Actores'
+              imagenes={data.actores}
+            />
 
-        {//Reat necesita una forma de identificar cada elemento de forma unica dentro de una lista
-          imagenes.map((seccion, index) => {
-
-            return (
-
-              <div key={index} className='secciones' >
-                <SeccionesCotenido
-                  titleSection="Series"
-                  imagenes={seccion.series}//Paso un array
-                />
-                <SeccionesCotenido
-                  titleSection='Películas'
-                  imagenes={seccion.peliculas}
-                />
-                <SeccionesCotenido
-                  titleSection='Actores'
-                  imagenes={seccion.actores}
-                />
-
-                <SeccionesCotenido
-                  titleSection='Más visto'
-                  imagenes={seccion.masvisto}
-                />
-              </div>
-            )
-
-          })}
+            <SeccionesCotenido
+              titleSection='Más visto'
+              imagenes={data.loMasVisto}
+            />
+        </div>
+          
         <Footer 
         icons={iconsFooter}//Paso un array de objectos
         />

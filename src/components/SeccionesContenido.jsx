@@ -6,6 +6,7 @@ class SeccionesCotenido extends React.Component {
         const { imagenes } = this.props;//Obtengo los valores de las propiedades
         const { titleSection } = this.props;
 
+        //console.log(imagenes)
         let arrayImagenes = []; {/**Array donde se guarda el contenedor individual de la imagenes*/ }
         if (titleSection == "Actores") {
 
@@ -13,7 +14,7 @@ class SeccionesCotenido extends React.Component {
 
                 /*Contenedor indivual de las imagenes  actores*/
                 <div className="mb-5 mt-5 rounded-xl " key={index}>
-                    <img src={imagen} className="max-w-56 max-h-56 rounded-full object-cover hover:ring-4 ring-yellow-300" />
+                    <img src={imagen.image} className="max-w-56 max-h-56 rounded-full object-cover hover:ring-4 ring-yellow-300" />
                 </div>
             ));
 
@@ -23,7 +24,7 @@ class SeccionesCotenido extends React.Component {
                 /*Contenedor indivual de las imagenes */
                 <div className="mb-10 mt-5 rounded-xl hover:ring-4 ring-yellow-300" key={index} >
                     <a href=''>
-                        <img src={imagen} className="max-w-56 max-h-56 rounded-xl" />
+                        <img src={imagen.image} className="max-w-56 max-h-56 rounded-xl" />
                     </a>
                 </div>
             ));

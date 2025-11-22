@@ -30,7 +30,30 @@
 
         {"id":8,"name":"Mortal Engines","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/Mortalengines.jpg"}
     ],
+    "loMasVisto":[
+        {"id":2,"name":"Little Women","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/littlewomen.jpg"},
+
+        {"id":4,"name":"The Outpost","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/TheOutpost.jpg"},
+
+        {"id":4,"name":"Now you see me","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/nowyouseeme.jpg"},
+
+        {"id":1,"name":"Dr.House","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/houseposter.jpg"},
+
+        {"id":7,"name":"Black Lightning","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/blacklightning.png"},
+
+        {"id":6,"name":"Travellers","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/travelers.jpg"},
+
+        {"id":3,"name":"The Godfather","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/elpadrino.jpg"}
+
+    ],
      "news": [
         {"id":1,"name":"Yeneviel","email":"yeneviel@gmail.com","password":"yeneviel"}
+    ],
+    "actores":[
+        {"id":1,"image":"/img/actores/alexanderDreymon.png"},
+        {"id":2,"image":"/img/actores/nafessawilliams.pn"},
+        {"id":3,"image":"/img/actores/emilyblunt.webp"},
+        {"id":4,"image":"/img/actores/chinaann.png"},
+        {"id":5,"image":"/img/actores/saoirseronan.png"}
     ]
 }
