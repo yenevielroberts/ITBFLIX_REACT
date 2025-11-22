@@ -3,7 +3,7 @@ const Contacto=()=>{
     return(
 
         <div className="flex flex-col justify-center items-center">
-            <h1 className="text-2xl text-white justify-start mb-10">Contacta con nosotros</h1>
+            <h1 className="text-2xl font-bold text-white justify-start mb-10">Contacta con nosotros</h1>
             <div className="flex flex-col bg-white w-3/12 h-fit justify-center items-center rounded-lg">
              <form className="flex flex-col justify-center items-center mt-5">
 

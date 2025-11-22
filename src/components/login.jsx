@@ -104,9 +104,10 @@ const LoginFormulario=()=>{
     return(
 
         <main>
-            <div className="flex justify-center">
-                <div className="flex flex-col bg-white w-3/12 h-96  justify-center items-center rounded-lg">
-                    <h1 className="text-2xl justify-start">Log in</h1>
+            <div className="flex flex-col justify-center items-center">
+                  <h1 className="text-2xl font-bold text-white justify-start mb-10">Log in</h1>
+                <div className="flex flex-col bg-white w-3/12 h-auto  justify-center items-center rounded-lg">
+                  
                         {/**si el objeto submitMessage no es null renderiza */}
                     {displayMessage &&(
                             
