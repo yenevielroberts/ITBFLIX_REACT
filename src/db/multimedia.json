@@ -1,0 +1,20 @@
+{
+      "seriesWebp":[
+         {"id":1,"name":"Dr.House","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/houseposter.jpg"},
+
+        {"id":2,"name":"Showdow and Bone","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/shadowandbone.jpg"},
+        {"id":3,"name":"The Last Kindom","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/thelastkingdom.jpg"},
+        {"id":4,"name":"The Outpost","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/TheOutpost.jpg"},
+
+        {"id":5,"name":"The resident","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/theresident.jpg"},
+
+        {"id":6,"name":"Travellers","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/travelers.jpg"},
+
+        {"id":7,"name":"Black Lightning","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/blacklightning.png"}
+
+    ],
+    "video":[
+
+    ],
+    "audio":[]
+}

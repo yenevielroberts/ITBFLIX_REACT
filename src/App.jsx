@@ -6,6 +6,7 @@ import LoginFormulario from './components/login'
 import Lista from './components/Listas'
 import News from './components/Noticias'
 import Header from './components/Header'
+import Multimedia from './components/Multimedia'
 
 class App extends React.Component{
 
@@ -21,6 +22,7 @@ class App extends React.Component{
           <Route path="/series" element={<Lista listas="series"/>}/>
           <Route path="/movies" element={<Lista listas="movies"/>}/>
           <Route path="/news" element={<News />}/>
+          <Route path="/multimedia" element={<Multimedia />}/>
         </Routes>
       </>
       

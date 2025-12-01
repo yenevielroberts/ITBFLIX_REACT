@@ -4,7 +4,7 @@ const Contacto=()=>{
 
         <div className="flex flex-col justify-center items-center">
             <h1 className="text-2xl font-bold text-white justify-start mb-10">Contacta con nosotros</h1>
-            <div className="flex flex-col bg-white w-3/12 h-fit justify-center items-center rounded-lg">
+            <div className="flex flex-col bg-white w-auto h-auto p-4 justify-center items-center rounded-lg">
              <form className="flex flex-col justify-center items-center mt-5">
 
             <div>
