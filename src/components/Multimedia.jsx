@@ -1,5 +1,7 @@
 import data from '../db/multimedia.json'
 import React from 'react'
+import AudioPlayer from './AudioPlayer';
+import VideoPlayer from './VideoPlayer';
 
 class Multimedia extends React.Component {
 
@@ -27,7 +29,7 @@ class Multimedia extends React.Component {
             <section className="flex-col mb-36 h-fit sm:h-fit bg-blue-900" >
                 {/**Contenedor del titulo y flecha */}
                 <div className="flex w-full items-center">
-                    <h2 className=" mb-2 ml-2 p-3 w-96 text-white font-serif text-2xl">{this.props.titleSection}</h2>
+                    <h2 className=" mb-2 ml-2 p-3 w-96 text-white font-serif text-2xl">{titleSection}</h2>
                     {/**Icono de flecha */}
                     <div className="flex w-full justify-end mr-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-8
@@ -40,7 +42,12 @@ class Multimedia extends React.Component {
                 <div className=" flex flex-row flex-wrap  justify-evenly ">
                     {arrayImagenes}{/**Muestro las imagenes */}
                 </div>
+                <AudioPlayer />
+                <VideoPlayer />
             </section>
+           
+
+           
         )
     }
 
