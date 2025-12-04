@@ -42,6 +42,7 @@ class Multimedia extends React.Component {
                 <div className=" flex flex-row flex-wrap  justify-evenly ">
                     {arrayImagenes}{/**Muestro las imagenes */}
                 </div>
+                
                 <AudioPlayer />
                 <VideoPlayer />
             </section>
