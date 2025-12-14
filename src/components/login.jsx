@@ -97,7 +97,7 @@ const LoginFormulario=()=>{
             <label htmlFor={id} className='mr-2'>
                 {label}
             </label>
-            <input type={type} id={id} name={id} value={formData[id]} onChange={handleChange} required className='m-2 border border-black rounded-lg p-1 '/>
+            <input type={type} id={id} name={id} value={formData[id]} onChange={handleChange} required className='m-2 border border-black rounded-lg p-1 focus:outline-blue-500'/>
         </div>
     )
 
@@ -119,7 +119,7 @@ const LoginFormulario=()=>{
                     <form onSubmit={handleSubmit}className="flex flex-col justify-center items-center">
                         {renderInput("userEmail","User email","email")}
                         {renderInput("userPassword","User password","password")}
-                        <button type='submit'className="border p-1 rounded-lg bg-blue-800 text-white w-20 m-2">Log in</button>
+                        <button type='submit'className="border p-1 rounded-lg bg-blue-800 text-white w-20 m-2  hover:bg-green-800">Log in</button>
                     </form>
                 </div>
          </div>
