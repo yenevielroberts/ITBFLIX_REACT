@@ -15,14 +15,14 @@ class App extends React.Component{
     return(
       <>
         <Header/>
-        <Routes>
-          <Route path="/login" element={<LoginFormulario />}/>
-          <Route path="/contacto" element={<Contacto />}/>
-          <Route path="/" element={<Home />}/>
-          <Route path="/series" element={<Lista listas="series"/>}/>
-          <Route path="/movies" element={<Lista listas="movies"/>}/>
-          <Route path="/news" element={<News />}/>
-          <Route path="/multimedia" element={<Multimedia />}/>
+          <Routes>
+            <Route path="/login" element={<LoginFormulario />}/>
+            <Route path="/contacto" element={<Contacto />}/>
+            <Route path="/" element={<Home />}/>
+            <Route path="/series" element={<Lista listas="series"/>}/>
+            <Route path="/movies" element={<Lista listas="movies"/>}/>
+            <Route path="/news" element={<News />}/>
+            <Route path="/multimedia" element={<Multimedia />}/>
         </Routes>
       </>
       
