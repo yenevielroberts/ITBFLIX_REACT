@@ -5,6 +5,7 @@ class VideoPlayer extends React.Component {
     render() {
 
         return (
+        /**Container vídeo */   
         <div className='m-5'>
             <h2 className=" mb-2 ml-2 p-3 w-96 text-white font-serif text-2xl">Vídeo</h2>
             <video controls width="640" height="360" loading="lazy">
