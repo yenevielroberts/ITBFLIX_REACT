@@ -125,8 +125,10 @@ const LoginFormulario=()=>{
                     <form onSubmit={handleSubmit}className="flex flex-col justify-center items-center">
                         {renderInput("userEmail","User email","email")}
                         {renderInput("userPassword","User password","password")}
-                         <label htmlFor="inputFocus" className='mr-2'>Name</label>
-                        <input type="text" id="inputFocus"name="inputFocus" value="" ref={inputRef} className='m-2 border border-black rounded-lg p-1 focus:outline-blue-500'/>
+                         <div>
+                            <label htmlFor="inputFocus" className='mr-2'>Name</label>
+                            <input type="text" id="inputFocus"name="inputFocus" value="" ref={inputRef} className='m-2 border border-black rounded-lg p-1 focus:outline-blue-500'/>
+                         </div>
     
                         <button type='submit'className="border p-1 rounded-lg bg-blue-800 text-white w-20 m-2  hover:bg-green-800">Log in</button>
                         <button type='button' onClick={handleClickFocus} className="border p-1 rounded-lg bg-blue-800 text-white w-fit-content m-2  hover:bg-green-800">Focus campo name</button>
