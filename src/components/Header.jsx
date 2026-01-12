@@ -19,7 +19,7 @@ function Header () {
                     
                     </div>
 
-                    <button className='hamburger-btn' onClick={()=>setMenuAbierto(!menuAbierto)}>
+                    <button className='hamburger-btn' onClick={()=>setMenuAbierto(!menuAbierto)} aria-label='Abrir menu de navegación' aria-expanded={menuAbierto}>
                         <span className='bar'></span>
                         <span className='bar'></span>
                         <span className='bar'></span>
