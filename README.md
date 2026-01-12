@@ -1,17 +1,27 @@
-# React + Vite
+## RA2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## RA3
 
-Currently, two official plugins are available:
+## RA4
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Parte de investigación:
 
-## React Compiler
+- UseRef
+- UseState
+- ARIA
+- Media queries
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Parte práctica:
 
-## Expanding the ESLint configuration
+**Tarea 1- Uso de useref**
+Hacer un botón que cuando se haga clic haga que el focus se situe en un formulario o elemento especifico de la página.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# ITBFLIX_REACT
+En el formulario de login es donde he implementado esta función.
+
+**Tarea 2 - Integración de ARIA**
+
+He utilizado aria-live="assertive" en un div que muestra un mensaje de exito o error para que avise del cambio en el formulario de log in.
+
+aria-invalid - Indica que un dato en un form es erróneo. Lo he utilizado en el form de log in para el camp de email.
+
+role="button"- Para definir el tipo de objeto. Lo he utilizado en el homepage para las imagenes que al hacer click llevan a otra página (De momento solo regarga la página inicial)

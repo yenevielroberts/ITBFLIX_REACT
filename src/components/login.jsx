@@ -97,7 +97,7 @@ const LoginFormulario=()=>{
             <label htmlFor={id} className='mr-2'>
                 {label}
             </label>
-            <input type={type} id={id} name={id} value={formData[id]}ref={inputRef} onChange={handleChange} required className='m-2 border border-black rounded-lg p-1 focus:outline-blue-500'/>
+            <input type={type} id={id} name={id} value={formData[id]}ref={inputRef} onChange={handleChange} aria-invalid required className='m-2 border border-black rounded-lg p-1 focus:outline-blue-500'/>
         </div>
     )
 
@@ -116,8 +116,8 @@ const LoginFormulario=()=>{
                   
                         {/**si el objeto submitMessage no es null renderiza */}
                     {displayMessage &&(
-                            
-                        <div className='m-5 font-bold'>
+                          
+                        <div className='m-5 font-bold' aria-live="assertive">
                             {displayMessage.credenciales}
                         </div>    
 
@@ -125,6 +125,7 @@ const LoginFormulario=()=>{
                     <form onSubmit={handleSubmit}className="flex flex-col justify-center items-center">
                         {renderInput("userEmail","User email","email")}
                         {renderInput("userPassword","User password","password")}
+                        {/*Uso de useref poniendo el focus en un campo */}
                          <div>
                             <label htmlFor="inputFocus" className='mr-2'>Name</label>
                             <input type="text" id="inputFocus"name="inputFocus" value="" ref={inputRef} className='m-2 border border-black rounded-lg p-1 focus:outline-blue-500'/>
