@@ -30,7 +30,7 @@ class Home extends React.Component {
         
         {/**Barra de busqueda */}
         <div className="flex  h-20 mb-28 items-center justify-center">
-          <form className='flex flex-col w-full items-center justify-center'>
+          <form className='formBarra'>
             <div className='relative w-full max-w-xl'>
               {/**Icono */}
               <svg className="absolute left-3 top-1/2  transform -translate-y-1/2 w-5 h-5 text-black dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">

@@ -24,7 +24,7 @@ class SeccionesCotenido extends React.Component {
                 /*Contenedor indivual de las imagenes */
                 <div className="mb-10 mt-5 rounded-xl hover:ring-4 ring-yellow-300" ole='button' key={index} >
                     <a href=''>
-                        <img src={imagen.image} className="max-w-56 max-h-56 rounded-xl" />
+                        <img src={imagen.image} className="image" />
                     </a>
                 </div>
             ));
@@ -32,10 +32,10 @@ class SeccionesCotenido extends React.Component {
 
 
         return (
-            <section className="flex-col mb-36 h-fit sm:h-fit bg-blue-900" >
+            <section className="containerImg" >
                 {/**Contenedor del titulo y flecha */}
                 <div className="flex w-full items-center">
-                    <h2 className=" mb-2 ml-2 p-3 w-96 text-white font-serif text-2xl">{this.props.titleSection}</h2>
+                    <h2 className="til-section">{this.props.titleSection}</h2>
                     {/**Icono de flecha */}
                     <div className="flex w-full justify-end mr-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-8

@@ -25,3 +25,8 @@ He utilizado aria-live="assertive" en un div que muestra un mensaje de exito o e
 aria-invalid - Indica que un dato en un form es erróneo. Lo he utilizado en el form de log in para el camp de email.
 
 role="button"- Para definir el tipo de objeto. Lo he utilizado en el homepage para las imagenes que al hacer click llevan a otra página (De momento solo regarga la página inicial)
+
+**Tarea 3- Web Responsive**
+Home page
+
+Convertir el menú lateral en un menú amburguesa cuando la pantalla sea pequeña.
