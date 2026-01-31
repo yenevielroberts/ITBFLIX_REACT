@@ -2,7 +2,6 @@ import React from 'react'
 import Footer from './Footer'
 import SeccionesCotenido from './SeccionesContenido'
 import data from '../db/data.json'
-import '../css/App.css'
 
 
 class Home extends React.Component {
