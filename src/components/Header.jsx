@@ -14,7 +14,7 @@ function Header () {
                     {/**Contenedor para el logo */}
                     <div className='logo-container'>
                         <Link to={"/"}>
-                            <img src="/logoitbflix.png" className='logo-img' alt='Logo itb flix'></img>
+                            <img src="/logoitbflix.webp" className='logo-img' alt='Logo itb flix'></img>
                         </Link>
                     
                     </div>
