@@ -2,14 +2,18 @@ import React from "react";
 
 class Footer extends React.Component {
 
+    handlerClick=(params)=> {
+        window.location.href="https://www."+params+".com"
+    }
+
     render() {
 
         const {icons}=this.props;
         const iconsFooter= icons.map((icon, index)=> (//Itero el array de objectos
                //container para cada icon 
-            <div key={index}className="m-1">
-                <a href='' dangerouslySetInnerHTML={{ __html: icon.tag }} >
-                </a>
+            <div key={index}className="m-1" dangerouslySetInnerHTML={{ __html: icon.tag }} onClick={()=>this.handlerClick(icon.name)}>
+                   
+               
             </div>
         ));
 

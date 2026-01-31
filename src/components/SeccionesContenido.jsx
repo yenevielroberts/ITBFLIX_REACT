@@ -14,7 +14,7 @@ class SeccionesCotenido extends React.Component {
 
                 /*Contenedor indivual de las imagenes  actores*/
                 <div className="mb-5 mt-5 rounded-xl " key={index} role='button'>
-                    <img src={imagen.image} className="max-w-56 max-h-56 rounded-full object-cover hover:ring-4 ring-yellow-300" />
+                    <img src={imagen.image} alt={imagen.alt} className="max-w-56 max-h-56 rounded-full object-cover hover:ring-4 ring-yellow-300" />
                 </div>
             ));
 
@@ -22,9 +22,9 @@ class SeccionesCotenido extends React.Component {
             arrayImagenes = imagenes.map((imagen, index) => (
 
                 /*Contenedor indivual de las imagenes */
-                <div className="mb-10 mt-5 rounded-xl hover:ring-4 ring-yellow-300" ole='button' key={index} >
+                <div className="mb-10 mt-5 rounded-xl hover:ring-4 ring-yellow-300" role='button' key={index} >
                     <a href=''>
-                        <img src={imagen.image} className="image" />
+                        <img src={imagen.image} className="image" alt={imagen.alt}  />
                     </a>
                 </div>
             ));

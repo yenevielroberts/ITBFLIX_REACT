@@ -1,59 +1,59 @@
 {
     "series": [
-        {"id":1,"name":"Dr.House","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/houseposter.jpg"},
+        {"id":1,"name":"Dr.House","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/houseposter.jpg", "alt":"Foto de la seria Doctor house"},
 
-        {"id":2,"name":"Showdow and Bone","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/shadowandbone.jpg"},
-        {"id":3,"name":"The Last Kindom","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/thelastkingdom.jpg"},
-        {"id":4,"name":"The Outpost","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/TheOutpost.jpg"},
+        {"id":2,"name":"Showdow and Bone","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/shadowandbone.jpg","alt":"Foto de la seria Shadow and bone"},
+        {"id":3,"name":"The Last Kindom","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/thelastkingdom.jpg","alt":"Foto de la seria The last kingdom"},
+        {"id":4,"name":"The Outpost","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/TheOutpost.jpg","alt":"Foto de la seria The outpost"},
 
-        {"id":5,"name":"The resident","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/theresident.jpg"},
+        {"id":5,"name":"The resident","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/theresident.jpg","alt":"Foto de la seria The resident"},
 
-        {"id":6,"name":"Travellers","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/travelers.jpg"},
+        {"id":6,"name":"Travellers","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/travelers.jpg","alt":"Foto de la seria Travellers"},
 
-        {"id":7,"name":"Black Lightning","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/blacklightning.png"}
+        {"id":7,"name":"Black Lightning","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/blacklightning.png","alt":"Foto de la seria Black lightning"}
 
     ],
      "movies": [
-        {"id":1,"name":"Catch me if you can","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/catchmeifyoucan.jpg"},
+        {"id":1,"name":"Catch me if you can","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/catchmeifyoucan.jpg","alt":"Foto de la película Catch me if you can"},
 
-        {"id":2,"name":"Little Women","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/littlewomen.jpg"},
+        {"id":2,"name":"Little Women","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/littlewomen.jpg","alt":"Foto de la película Little women"},
 
-        {"id":3,"name":"The Godfather","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/elpadrino.jpg"},
+        {"id":3,"name":"The Godfather","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/elpadrino.jpg","alt":"Foto de la película The godfather"},
 
-        {"id":4,"name":"Now you see me","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/nowyouseeme.jpg"},
+        {"id":4,"name":"Now you see me","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/nowyouseeme.jpg","alt":"Foto de la película now you see me"},
 
-        {"id":5,"name":"Oppenheimer","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/Oppenheimer.jpg"},
+        {"id":5,"name":"Oppenheimer","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/Oppenheimer.jpg","alt":"Foto de la película Oppenheimer"},
 
-        {"id":6,"name":"The King","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/the king.png"},
+        {"id":6,"name":"The King","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/the king.png","alt":"Foto de la película The King"},
 
-        {"id":7,"name":"The mortal instruments: City of bones","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/shadowhunters.jpg"},
+        {"id":7,"name":"The mortal instruments: City of bones","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/shadowhunters.jpg","alt":"Foto de la película The mortal instruments:City of bones"},
 
-        {"id":8,"name":"Mortal Engines","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/Mortalengines.jpg"}
+        {"id":8,"name":"Mortal Engines","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/Mortalengines.jpg","alt":"Foto de la película Mortal Engines"}
     ],
     "loMasVisto":[
-        {"id":2,"name":"Little Women","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/littlewomen.jpg"},
+        {"id":2,"name":"Little Women","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/littlewomen.jpg","alt":"Foto de la película Little women"},
 
-        {"id":4,"name":"The Outpost","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/TheOutpost.jpg"},
+        {"id":4,"name":"The Outpost","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/TheOutpost.jpg","alt":"Foto de la serie The outpost"},
 
-        {"id":4,"name":"Now you see me","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/nowyouseeme.jpg"},
+        {"id":4,"name":"Now you see me","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/nowyouseeme.jpg","alt":"Foto de la película Now you see me"},
 
-        {"id":1,"name":"Dr.House","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/houseposter.jpg"},
+        {"id":1,"name":"Dr.House","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/houseposter.jpg","alt":"Foto de la serie Doctor house"},
 
-        {"id":7,"name":"Black Lightning","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/blacklightning.png"},
+        {"id":7,"name":"Black Lightning","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/blacklightning.png","alt":"Foto de la serie Black lightning"},
 
-        {"id":6,"name":"Travellers","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/travelers.jpg"},
+        {"id":6,"name":"Travellers","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/travelers.jpg","alt":"Foto de la serie Travellers"},
 
-        {"id":3,"name":"The Godfather","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/elpadrino.jpg"}
+        {"id":3,"name":"The Godfather","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/elpadrino.jpg","alt":"Foto de la película The Godfather"}
 
     ],
      "news": [
         {"id":1,"name":"Yeneviel","email":"yeneviel@gmail.com","password":"yeneviel"}
     ],
     "actores":[
-        {"id":1,"image":"/img/actores/alexanderDreymon.png"},
-        {"id":2,"image":"/img/actores/nafessawilliams.png"},
-        {"id":3,"image":"/img/actores/emilyblunt.webp"},
-        {"id":4,"image":"/img/actores/chinaann.png"},
-        {"id":5,"image":"/img/actores/saoirseronan.png"}
+        {"id":1,"image":"/img/actores/alexanderDreymon.png","alt":"Foto del actor Alexander Dreymon"},
+        {"id":2,"image":"/img/actores/nafessawilliams.png","alt":"Foto de la actriz Nafessa Williams"},
+        {"id":3,"image":"/img/actores/emilyblunt.webp","alt":"Foto de la actriz Emily Blunt"},
+        {"id":4,"image":"/img/actores/chinaann.png","alt":"Foto de la actriz Chiaan"},
+        {"id":5,"image":"/img/actores/saoirseronan.png","alt":"Foto de la actriz Saoirse Ronan"}
     ]
 }
