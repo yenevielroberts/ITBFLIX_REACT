@@ -13,9 +13,9 @@ render(){
      const lista=listaMostrar.map((serie, index)=>(
 
         <section key={index} className="flex flex-col m-10 justify-center items-center">
-            <h3 className='text-lg text-white font-bold mb-5'>{serie.name}</h3>
+            <h2 className='text-lg text-white font-bold mb-5'>{serie.name}</h2>
             <div className='rounded-xl hover:ring-4 ring-yellow-300'>
-                  <img src={serie.image} className="max-w-56 max-h-56 rounded-xl"  />
+                  <img src={serie.image} className="max-w-56 max-h-56 rounded-xl"  alt={serie.alt}/>
             </div>
           
         </section>
@@ -25,7 +25,7 @@ render(){
     return(
 
        <section className='flex flex-col'>
-            <h2 className='text-2xl text-white font-bold m-5'>{listas}</h2>
+            <h1 className='text-2xl text-white font-bold m-5'>{listas}</h1>
             <div className='flex flex-row flex-wrap items-center'>
                {lista}  
             </div>
