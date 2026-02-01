@@ -1,5 +1,5 @@
 {
-    "series": [
+    "Series": [
         {"id":1,"name":"Dr.House","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/houseposter.jpg", "alt":"Foto de la seria Doctor house"},
 
         {"id":2,"name":"Showdow and Bone","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/shadowandbone.jpg","alt":"Foto de la seria Shadow and bone"},
@@ -13,7 +13,7 @@
         {"id":7,"name":"Black Lightning","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/series/blacklightning.png","alt":"Foto de la seria Black lightning"}
 
     ],
-     "movies": [
+     "Movies": [
         {"id":1,"name":"Catch me if you can","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/catchmeifyoucan.jpg","alt":"Foto de la película Catch me if you can"},
 
         {"id":2,"name":"Little Women","description":"yeneviel@gmail.com","director":"yeneviel","year":2024,"actors":["ana","lisa","lia"], "image":"/img/peliculas/littlewomen.jpg","alt":"Foto de la película Little women"},

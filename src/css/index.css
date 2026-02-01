@@ -13,23 +13,22 @@
     padding: 0 20px;
 }
 
-.navbar {
+.header-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100%; 
 }
-
 
 .nav-links {
     display: flex;
     width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:right;
     list-style: none;
 }
 .nav-links li{
-    margin-left: 20px;
+    margin-left: 100px;
 }
 
 .nav-links a {
@@ -40,6 +39,10 @@
 
 .active-link {
     color: #fde047 !important; /* text-yellow-300 */
+}
+
+.logo-container{
+    margin-left:10px;
 }
 
 /* Ocultamos el botón hamburguesa en PC */
@@ -62,7 +65,8 @@
     display: flex;
     flex-direction: column;
     background-color: #1e3a8a;
-    margin-bottom: 36px;
+    margin-bottom: 100px;
+    padding:10px;
     height: fit-content;
 }
 
@@ -70,6 +74,11 @@
     max-width:300px ;
     max-height: 300px;
     border-radius: 10px;
+    
+}
+
+.image:hover{
+    outline: 4px solid #fde047;
 }
 
 .til-section{

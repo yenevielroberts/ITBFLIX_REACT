@@ -8,7 +8,7 @@ class Footer extends React.Component {
         const iconsFooter= icons.map((icon, index)=> (//Itero el array de objectos
                //container para cada icon 
             <div key={index}className="m-1" >
-                <a href={icon.link} dangerouslySetInnerHTML={{ __html: icon.tag }} aria-label="enlace red social"> 
+                <a href={icon.link} dangerouslySetInnerHTML={{ __html: icon.tag }} aria-label={`Ir a ${icon.name}`}> 
                 </a>
             </div>
         ));

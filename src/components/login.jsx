@@ -110,7 +110,7 @@ const LoginFormulario=()=>{
     return(
 
         <main>
-            <div className="flex flex-col justify-center items-center">
+            <section className="flex flex-col justify-center items-center">
                   <h1 className="text-2xl font-bold text-white justify-start mb-10">Log in</h1>
                 <div className="flex flex-col bg-white w-auto h-auto p-4 justify-center items-center rounded-lg">
                   
@@ -131,11 +131,11 @@ const LoginFormulario=()=>{
                             <input type="text" id="inputFocus"name="inputFocus" value="" ref={inputRef} className='m-2 border border-black rounded-lg p-1 focus:outline-blue-500'/>
                          </div>
     
-                        <button type='submit'className="border p-1 rounded-lg bg-blue-800 text-white w-20 m-2  hover:bg-green-800">Log in</button>
-                        <button type='button' onClick={handleClickFocus} className="border p-1 rounded-lg bg-blue-800 text-white w-fit-content m-2  hover:bg-green-800">Focus campo name</button>
+                        <button type='submit'className="border p-2 rounded-lg bg-blue-800 text-white w-fit m-2  hover:bg-green-800">Iniciar sesión</button>
+                        <button type='button' onClick={handleClickFocus} className="border p-2 rounded-lg bg-blue-800 text-white w-fit-content m-2  hover:bg-green-800">Poner focus en campo name</button>
                     </form>
                 </div>
-         </div>
+         </section>
         </main>
     )
 }

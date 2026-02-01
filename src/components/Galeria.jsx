@@ -21,10 +21,14 @@ class Galeria extends React.Component {
         
         return (
            
-                /**Contenedor de todas las imagenes de una sección */
+            <section className="containerImg">
+                 <h3 className=" mb-2 ml-2 p-3 w-96 text-white font-serif text-xl">Geleria</h3>
+                 {/*Contenedor de todas las imagenes de una sección */}
                 <div className=" flex flex-row flex-wrap  justify-evenly ">
                     {arrayImagenes}{/**Muestro las imagenes */}
                 </div>
+            </section>
+               
    
         )
     }

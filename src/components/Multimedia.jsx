@@ -8,8 +8,8 @@ class Multimedia extends React.Component {
 
     render() {
         return (
-            <section className="flex-col mb-36 h-fit sm:h-fit bg-blue-900" >
-                <h2 className=" mb-2 ml-2 p-3 w-96 text-white font-serif text-2xl">Multimedia</h2>
+            <section className="flex-col justify-center mb-36 h-fit sm:h-fit" >
+                <h2 className="flex justify-center mb-2 ml-2 p-3 text-white font-serif text-2xl ">Multimedia</h2>
                 <Galeria />
                 <AudioPlayer />
                 <VideoPlayer />

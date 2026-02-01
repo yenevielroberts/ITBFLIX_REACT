@@ -22,8 +22,8 @@ class SeccionesCotenido extends React.Component {
             arrayImagenes = imagenes.map((imagen, index) => (
 
                 /*Contenedor indivual de las imagenes */
-                <div className="mb-10 mt-5 rounded-xl hover:ring-4 ring-yellow-300" role='button' key={index} >
-                    <a href=''>
+                <div className="mb-10 mt-5 p-2 rounded-xl " role='button' key={index} >
+                    <a href='' >
                         <img src={imagen.image} className="image" alt={imagen.alt}  />
                     </a>
                 </div>
