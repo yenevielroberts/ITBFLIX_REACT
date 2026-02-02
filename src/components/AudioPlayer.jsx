@@ -7,7 +7,7 @@ class AudioPlayer extends React.Component {
         return (
          /**Container audio */   
         <section className="containerImg">
-            <h3 className=" mb-2 ml-2 p-3 w-96 text-white font-serif text-xl">Audio</h3>
+            <h2 className=" mb-2 ml-2 p-3 w-96 text-white font-serif text-xl">Audio</h2>
             <audio controls >
             <source src='audio/Kygo-Freeze.mp3' type='audio/mpeg' />
              <source src='audio/Kygo-Freeze-ogg.ogg' type='audio/ogg' />
