@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
+User-agent: Googlebot
+Disallow: /cerca-interna/
+Sitemap: http://localhost:5173/sitemap.xml
