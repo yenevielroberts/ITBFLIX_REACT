@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* --- DISEÑO PARA ESCRITORIO (POR DEFECTO) --- */
+.header-container {
+  background-color: #1e3a8a; /* bg-blue-900 */
+  height: 112px; /* h-28 */
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  /*header-content*/
+}
+.header-container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header-container {
+  /*logo container*/
+}
+.header-container div {
+  margin-left: 10px;
+}
+.header-container {
+  /*Menú hamburguesa */
+}
+.header-container button span {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+}
+.header-container nav ul {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: right;
+  list-style: none;
+}
+.header-container nav ul li {
+  margin-left: 100px;
+}
+.header-container nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.header-container nav ul li a .active-link {
+  color: #fde047 !important; /* text-yellow-300 */
+}
+
+/* --- MEDIA QUERY PARA PANTALLAS PEQUEÑAS (MÓVIL) --- */
+@media (max-width: 768px) {
+  .hamburger-btn {
+    display: flex; /* Aparece el botón */
+  }
+  .nav-links {
+    display: none; /* Escondemos el menú normal */
+    flex-direction: column;
+    position: absolute;
+    top: 112px; /* Debajo del header */
+    left: 0;
+    width: 100%;
+    background-color: #1e3a8a;
+    padding: 20px;
+    z-index: 100;
+  }
+  /* Cuando el estado de React activa esta clase, el menú se muestra */
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+/*Estilos responsives de la practica RA4 Elements d'interactivitat i accessibilitat en webs*/
+/* --- Estilos default para escritorios --- */
+.containerImg {
+  display: flex;
+  flex-direction: column;
+  background-color: #1e3a8a;
+  margin-bottom: 100px;
+  padding: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.image {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 10px;
+}
+
+.image:hover {
+  outline: 4px solid #fde047;
+}
+
+.til-section {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  padding: 10px;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+.formBarra {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- MEDIA QUERY PARA PANTALLAS PEQUEÑAS (MÓVIL) --- */
+@media (max-width: 768px) {
+  .containerImg {
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 36px;
+  }
+  .image {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 10px;
+  }
+  .til-section {
+    font-size: 25px;
+  }
+  .formBarra {
+    margin: 20px;
+  }
+}/*# sourceMappingURL=styles.css.map */

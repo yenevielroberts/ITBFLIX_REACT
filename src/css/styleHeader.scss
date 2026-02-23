@@ -2,101 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 /* --- DISEÑO PARA ESCRITORIO (POR DEFECTO) --- */
-.header-container {
-    background-color: #1e3a8a; /* bg-blue-900 */
+
+
+.header-container{
+
+    background-color: $color-fondo; /* bg-blue-900 */
     height: 112px; /* h-28 */
     display: flex;
     align-items: center;
     padding: 0 20px;
-}
 
-.header-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%; 
-}
+    /*header-content*/
+    div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%; 
+    }
 
-.nav-links {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content:right;
-    list-style: none;
-}
-.nav-links li{
-    margin-left: 100px;
-}
+    /*logo container*/
+    div{
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-}
+        margin-left:10px;
+        img{
 
-.active-link {
-    color: #fde047 !important; /* text-yellow-300 */
-}
+        }
+    }
+    /*Menú hamburguesa */
+    button{
 
-.logo-container{
-    margin-left:10px;
-}
+        span{
+            width: 30px;
+            height: 4px;
+            background-color: white;
+        }
+    }
 
-/* Ocultamos el botón hamburguesa en PC */
-.hamburger-btn {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
+    nav{
 
-.bar {
-    width: 30px;
-    height: 4px;
-    background-color: white;
-}
+        ul{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content:right;
+            list-style: none;
 
-.containerImg{
-    display: flex;
-    flex-direction: column;
-    background-color: #1e3a8a;
-    margin-bottom: 100px;
-    padding:10px;
-    height: fit-content;
-}
-
-.image{
-    max-width:300px ;
-    max-height: 300px;
-    border-radius: 10px;
-    
-}
-
-.image:hover{
-    outline: 4px solid #fde047;
-}
-
-.til-section{
-    width: fit-content;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    padding: 10px;
-    color: white;
-    font-family: sans-serif;
-    font-size: 30px;
-}
-
-.formBarra{
-    display: flex;
-    flex-direction: column;
-    width:100%;
-    align-items: center;
-    justify-content: center;
+            
+            li{
+                margin-left: 100px;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    transition: 0.3s;
+                    .active-link{
+                        color: $color-focus !important; /* text-yellow-300 */
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* --- MEDIA QUERY PARA PANTALLAS PEQUEÑAS (MÓVIL) --- */
@@ -126,25 +91,4 @@
         text-align: center;
         padding: 10px 0;
     }
-
-    .containerImg{
-        justify-content: center;
-        margin: 20px;
-        margin-bottom: 36px;
-       
-    }
-
-    .image{
-    max-width:250px ;
-    max-height: 250px;
-    border-radius: 10px; 
-    }
-
-    .til-section{
-    font-size: 25px;
-    }
-
-    .formBarra{
-    margin: 20px;
-}
 }
