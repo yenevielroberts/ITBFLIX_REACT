@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/*Variable para hacer condicional*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* --- DISEÑO PARA ESCRITORIO (POR DEFECTO) --- */
+.header-container {
+  /*Condicional*/
+  background-color: #1d4ed8;
+  /* bg-blue-900 */
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1.25rem;
+  position: relative;
+  /*header-content*/
+}
+.header-container .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header-container {
+  /*logo container*/
+}
+.header-container .logo-container {
+  margin-left: 0.625rem;
+}
+.header-container {
+  /*Menú hamburguesa */
+}
+.header-container .hamburger-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+.header-container .hamburger-btn .bar {
+  width: 1.875rem;
+  height: 0.25rem;
+  background-color: #f8fafc;
+  transition: all 0.3s ease;
+  border-radius: 0.125rem;
+}
+.header-container nav {
+  /* En móvil: ocultar el menú por defecto. La lista debe usar la clase .nav-links */
+}
+.header-container nav .nav-links {
+  background-color: #0f172a;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  width: 100%;
+  padding: 1.25rem;
+  z-index: 100;
+}
+.header-container nav .nav-links li {
+  text-align: center;
+  padding: 0.9375rem 0;
+  list-style: none;
+  font-size: 0.875rem;
+  transition: background-color 0.3s ease;
+}
+.header-container nav .nav-links li a {
+  color: #f8fafc;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 0.3125rem;
+}
+.header-container nav .nav-links {
+  /*Bucle*/
+}
+.header-container nav .nav-links li:nth-child(1) {
+  background-color: #0b0f1a;
+}
+.header-container nav .nav-links li:nth-child(2) {
+  background-color: #1d4ed8;
+}
+.header-container nav .nav-links li:nth-child(3) {
+  background-color: #0b0f1a;
+}
+.header-container nav .nav-links li:nth-child(4) {
+  background-color: #1d4ed8;
+}
+.header-container nav .nav-links li:nth-child(5) {
+  background-color: #0b0f1a;
+}
+.header-container nav .nav-links {
+  /* Cuando React añade .active a .nav-links se muestra */
+}
+.header-container nav .nav-links.active {
+  display: flex !important;
+}
+
+/* --- MEDIA QUERY PARA TABLET --- */
+@media (min-width: 768px) {
+  .header-container {
+    /* Mantener hamburguesa visible en tablet */
+  }
+  .header-container .hamburger-btn {
+    display: flex;
+  }
+  .header-container .hamburger-btn .bar {
+    width: 2rem;
+    height: 0.3125rem;
+  }
+  .header-container nav {
+    /* Menú desplegable ajustado para tablet */
+  }
+  .header-container nav .nav-links {
+    top: 7rem;
+    padding: 1.5rem;
+  }
+  .header-container nav .nav-links li {
+    padding: 1.25rem 0;
+    font-size: 1rem;
+  }
+}
+/* --- MEDIA QUERY PARA DESKTOP --- */
+@media (min-width: 1024px) {
+  .header-container {
+    /* ocultar botón hamburguesa en pantallas grandes */
+  }
+  .header-container .hamburger-btn {
+    display: none !important;
+  }
+  .header-container nav {
+    /* En escritorio mostrar .nav-links en fila */
+  }
+  .header-container nav .nav-links {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+    padding: 0;
+  }
+  .header-container nav .nav-links li {
+    margin-left: 2.5rem;
+    background-color: #1d4ed8 !important;
+    font-size: 1.25rem;
+  }
+}
+/*Estilos responsives de la practica RA4 Elements d'interactivitat i accessibilitat en webs*/
+/* --- Estilos default para escritorios --- */
+.containerImg {
+  display: flex;
+  flex-direction: column;
+  background-color: #0f172a;
+  margin-bottom: 100px;
+  padding: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.image {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 10px;
+}
+
+.image:hover {
+  outline: 4px solid #f59e0b;
+}
+
+.til-section {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  padding: 10px;
+  color: #f8fafc;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+.formBarra {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- MEDIA QUERY PARA PANTALLAS PEQUEÑAS (MÓVIL) --- */
+@media (max-width: 768px) {
+  .containerImg {
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 36px;
+  }
+  .image {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 10px;
+  }
+  .til-section {
+    font-size: 25px;
+  }
+  .formBarra {
+    margin: 20px;
+  }
+}/*# sourceMappingURL=styles.css.map */

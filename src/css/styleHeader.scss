@@ -7,7 +7,7 @@
 
 .header-container {
 
-
+    /*Condicional*/
     @if $bg-menu-movil {
         background-color: $light-blue;
     }
@@ -17,10 +17,10 @@
     }
 
     /* bg-blue-900 */
-    height: 112px;
+    height: 7rem;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 1.25rem;
     position: relative;
 
     /*header-content*/
@@ -33,22 +33,27 @@
 
     /*logo container*/
     .logo-container {
-        margin-left: 10px;
+        margin-left: 0.625rem;
     }
 
     /*Menú hamburguesa */
     .hamburger-btn {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 0.3125rem;
         background: none;
         border: none;
         cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease;
 
         .bar {
-            width: 30px;
-            height: 4px;
+            width: 1.875rem;
+            height: 0.25rem;
             background-color: $color-text-section;
+            transition: all 0.3s ease;
+            border-radius: 0.125rem;
         }
     }
 
@@ -60,34 +65,39 @@
             display: none;
             flex-direction: column;
             position: absolute;
-            top: 112px;
+            top: 7rem;
             left: 0;
             width: 100%;
-            padding: 20px;
+            padding: 1.25rem;
             z-index: 100;
 
             li {
 
                 text-align: center;
-                padding: 15px 0;
+                padding: 0.9375rem 0;
                 list-style: none;
+                font-size: 0.875rem;
+                transition: background-color 0.3s ease;
 
                 a {
                     color: $color-text-section;
                     text-decoration: none;
+                    display: block;
+                    padding: 0.5rem;
+                    border-radius: 0.3125rem;
                 }
             }
 
             /*Bucle*/
              @for $i from 1 through 5 {
                 li:nth-child(#{$i}) {
-                @if $i % 2 == 0 {
-                    background-color: $light-blue;
-                } @else {
-                    background-color: $color-black;
+                    @if $i % 2 == 0 {
+                        background-color: $light-blue;
+                    } @else {
+                        background-color: $color-black;
+                    }
                 }
-        }
-    }
+            }
 
 
             /* Cuando React añade .active a .nav-links se muestra */
@@ -101,8 +111,39 @@
 }
 
 
-/* --- MEDIA QUERY PARA de escriptorio --- */
-@media (min-width: 748px) {
+/* --- MEDIA QUERY PARA TABLET --- */
+@media (min-width: 768px) {
+    .header-container {
+
+        /* Mantener hamburguesa visible en tablet */
+        .hamburger-btn {
+            display: flex;
+            
+            .bar {
+                width: 2rem;
+                height: 0.3125rem;
+            }
+        }
+
+        nav {
+
+            /* Menú desplegable ajustado para tablet */
+            .nav-links {
+                top: 7rem;
+                padding: 1.5rem;
+
+                li {
+                    padding: 1.25rem 0;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+/* --- MEDIA QUERY PARA DESKTOP --- */
+@media (min-width: 1024px) {
     .header-container {
 
         /* ocultar botón hamburguesa en pantallas grandes */
@@ -121,12 +162,11 @@
                 padding: 0;
 
                 li {
-                    margin-left: 40px;
+                    margin-left: 2.5rem;
                     background-color: $light-blue !important;
+                    font-size: 1.25rem;
                 }
             }
-
-
         }
     }
 }
