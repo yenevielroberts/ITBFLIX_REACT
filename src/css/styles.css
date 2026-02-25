@@ -6,7 +6,7 @@
 /* --- DISEÑO PARA ESCRITORIO (POR DEFECTO) --- */
 .header-container {
   /*Condicional*/
-  background-color: #1d4ed8;
+  background-color: skyblue;
   /* bg-blue-900 */
   height: 7rem;
   display: flex;
@@ -33,66 +33,72 @@
 .header-container .hamburger-btn {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 0.3125rem;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 0.625rem;
   border-radius: 0.5rem;
   transition: all 0.3s ease;
 }
 .header-container .hamburger-btn .bar {
   width: 1.875rem;
   height: 0.25rem;
-  background-color: #f8fafc;
+  background-color: #ffffff;
   transition: all 0.3s ease;
   border-radius: 0.125rem;
+}
+.header-container .hamburger-btn:focus-visible {
+  outline: 0.125rem solid skyblue;
+  outline-offset: 0.125rem;
 }
 .header-container nav {
   /* En móvil: ocultar el menú por defecto. La lista debe usar la clase .nav-links */
 }
 .header-container nav .nav-links {
-  background-color: #0f172a;
+  background-color: #1e3a8a;
   display: none;
   flex-direction: column;
   position: absolute;
   top: 7rem;
   left: 0;
   width: 100%;
-  padding: 1.25rem;
+  padding: 0.75rem;
   z-index: 100;
+  border-radius: 0 0 0.75rem 0.75rem;
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 .header-container nav .nav-links li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
   text-align: center;
-  padding: 0.9375rem 0;
+  padding: 0.75rem 0;
   list-style: none;
   font-size: 0.875rem;
   transition: background-color 0.3s ease;
+  background-color: #1e3a8a;
+  border-bottom: 1px solid skyblue;
 }
 .header-container nav .nav-links li a {
-  color: #f8fafc;
+  color: #ffffff;
   text-decoration: none;
   display: block;
   padding: 0.5rem;
   border-radius: 0.3125rem;
 }
-.header-container nav .nav-links {
-  /*Bucle*/
+.header-container nav .nav-links li a .active-link {
+  color: #fde047;
 }
-.header-container nav .nav-links li:nth-child(1) {
-  background-color: #0b0f1a;
+.header-container nav .nav-links li:hover {
+  background-color: rgba(253, 224, 71, 0.15);
 }
-.header-container nav .nav-links li:nth-child(2) {
-  background-color: #1d4ed8;
-}
-.header-container nav .nav-links li:nth-child(3) {
-  background-color: #0b0f1a;
-}
-.header-container nav .nav-links li:nth-child(4) {
-  background-color: #1d4ed8;
-}
-.header-container nav .nav-links li:nth-child(5) {
-  background-color: #0b0f1a;
+.header-container nav .nav-links li:last-child {
+  border-bottom: none;
 }
 .header-container nav .nav-links {
   /* Cuando React añade .active a .nav-links se muestra */
@@ -142,10 +148,14 @@
     flex-direction: row;
     background-color: transparent;
     padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    overflow: visible;
   }
   .header-container nav .nav-links li {
     margin-left: 2.5rem;
-    background-color: #1d4ed8 !important;
+    background-color: transparent !important;
+    border-bottom: none;
     font-size: 1.25rem;
   }
 }
@@ -154,7 +164,7 @@
 .containerImg {
   display: flex;
   flex-direction: column;
-  background-color: #0f172a;
+  background-color: #1e3a8a;
   margin-bottom: 100px;
   padding: 10px;
   height: -moz-fit-content;
@@ -168,7 +178,7 @@
 }
 
 .image:hover {
-  outline: 4px solid #f59e0b;
+  outline: 4px solid #fde047;
 }
 
 .til-section {
@@ -177,7 +187,7 @@
   margin-bottom: 10px;
   margin-left: 5px;
   padding: 10px;
-  color: #f8fafc;
+  color: #ffffff;
   font-family: sans-serif;
   font-size: 30px;
 }
