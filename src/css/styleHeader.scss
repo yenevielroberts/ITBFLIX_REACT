@@ -108,6 +108,13 @@
                     font-weight: bold;
                 }
 
+                a {
+                    @if $nitidesa-text {
+                        text-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+                        font-weight: 600;
+                    }
+                }
+
                 &:hover {
                     background-color: rgba($color-focus, 0.15);
                 }
