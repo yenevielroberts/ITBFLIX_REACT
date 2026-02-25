@@ -117,6 +117,13 @@
                 border-bottom: none;
             }
 
+            /* Bucle para grosor progresivo del borde */
+            @for $i from 1 through 6 {
+                li:nth-child(#{$i}) {
+                    border-bottom-color: mix($light-blue, $color-focus, $i * 15%);
+                }
+            }
+
             /* Cuando React añade .active a .nav-links se muestra */
             &.active {
                 display: flex !important;
@@ -135,7 +142,7 @@
         /* Mantener hamburguesa visible en tablet */
         .hamburger-btn {
             display: flex;
-            
+
             .bar {
                 width: 2rem;
                 height: 0.3125rem;
