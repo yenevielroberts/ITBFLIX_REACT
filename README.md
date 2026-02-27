@@ -34,9 +34,6 @@ Crear un menú de navegación funcional
     - Link
  - Aplicar un CSS diferent si estic visitant la pàgina corresponent
 
-**Entrega**
-Enlace del repositorio de github
-
 ### P3_ex2 Gestió i optimització de contigut multimédia
 Integració i optimització de contingut multimèdia en React
 Implementació d'un nou apartat: Multimedia
@@ -58,11 +55,15 @@ Implementació d'un nou apartat: Multimedia
 - **Organització en component**
     - Cada tipus de contigut multimèdia ha de ser un component independet (Gallery per les imatges, AudioPlayer, VideoPlayer)
     - Importar i exportar correctament els components dins la App principal.
+
+**Entrega**
+Enlace del repositorio de github
  
 ## RA4 Elements d'interactivitat i accessibilitat en webs
 
 ### Part d'investigación:
-https://docs.google.com/document/d/16B3LltrIDMVB6hQCZbS_zYzup27PqkeWcJLIHh52jzA/edit?usp=drive_link 
+
+[Documentación](/investigacion/Còpia%20de%20P4_%20Elements%20d’interactivitat%20i%20accessibilitat%20en%20webs.md)
 - **UseRef i UseState**
 
     - Quina utilitat té el hook useRef?
@@ -121,3 +122,144 @@ Aplicacio de les WCAG:
 
 **Entrega** 
 Enlace del repositorio de github
+
+
+## RA5 Verificació, usabilitat i optimització
+
+### Part 1 - investigació
+
+[Documentación](/investigacion/P5_Roberts_Yeneviel.md)
+
+#### 1 Anàlisi de les Eines de Validació
+
+- Investiga i explica en 2-3 línies com funciona tècnicament cadascuna d'aquestes eines (què analitzen exactament? analitzen el DOM o el codi font?):
+    - WAVE (Extension)
+    - Google Lighthouse
+    - Chrome CSS Overview
+    - Figma (Plugins de contrast o Dev Mode)
+
+#### 2 Automatització SEO
+
+- Busca quines eines, llibreries (npm) o plugins existeixen per generar automàticament un robots.txt i un sitemap.xml en un projecte amb React/Vite.
+
+#### 3 Color
+
+- Investiga sobre la ràtio de contrast 4.5:1 (Nivell AA).
+- Per què és exactament 4.5? A quin tipus de text afecta? En quin cas podem baixar a 3:1?
+
+### Part 2  Diagnòstic de la teva Web
+
+#### Pas A: Diagnòstic Inicial
+
+1. Executa el teu projecte localment.
+2. Passa Lighthouse, WAVE i CSS Overview.
+3. Anota TOTS els errors que apareguin (des de falta d'etiquetes alt 
+4. fins a estructures d'encapçalament incorrectes o focus perduts).
+
+#### Pas B: Refactorització Completa
+
+1. Has d'aplicar tots els canvis necessaris al codi React per solucionar els errors detectats.
+2. Semàntica HTML: Revisa el teu component principal. Canvia els <div> innecessaris per etiquetes semàntiques (main, article, section, nav, footer).
+3. Formularis: Assegura't que tots els input tenen un label associat (o aria-label si el disseny no permet text visible).
+4. Botons Icona: Si tens botons que només són icones (xarxes socials, tancar, menú), afegeix l'atribut aria-label perquè els lectors de pantalla sàpiguen què fan.
+5. L'objectiu és aconseguir:
+- 0 errors a WAVE.
+- Semàfor verd (>90) a la categoria d'Accessibilitat de Lighthouse.
+
+### Part 3: Implementació SEO
+
+#### 1 Meta Etiquetes (SEO On-Page)
+
+- Ves al fitxer index.html del teu projecte Vite.
+- Afegeix/Edita el <title> perquè sigui descriptiu.
+- Afegeix la meta description (< 160 caràcters) explicant de què va la teva web.
+- Assegura't que tens el lang="ca" (o l'idioma que toqui) a l'etiqueta <html>
+
+#### 2 Robots.txt
+
+- Crea un fitxer robots.txt a la carpeta public/ del teu projecte Vite (així es copiarà a l'arrel en fer el build).
+- Configuració: Permet l'accés a tothom, però bloqueja una ruta fictícia anomenada /admin o /privat.
+
+#### 3 Sitemap.xml
+
+- Crea un fitxer sitemap.xml manualment a la carpeta public/.
+- Afegeix les URLs principals de la teva aplicació (Home, Contacte, Llistat, etc.).
+- Assigna una priority de 1.0 a la Home i 0.8 a la resta.
+
+
+### Part 4: Auditoria Externa 
+
+Escull una web real (pot ser la web d'un ajuntament petit, una botiga online local o una web que utilitzis sovint). No valen gegants com Google o Amazon (ho tenen massa optimitzat).
+
+- Passa-li l'eina WAVE o Lighthouse.
+
+**Redacta un informe responent**
+
+- Quina nota treu?
+- Quin és l'error d'accessibilitat més greu que has trobat? (Ex: Menús inaccessibles per teclat, imatges sense alt, contrast terrible).
+- Com ho arreglaries tècnicament si fossis el desenvolupador d'aquella web?
+
+
+### Entregable 
+- Fitxer PDF amb el nom P5_Cognom_Nom.pdf amb tots els apartats que cal fer informes o explicació.
+- Enllaç a GitHub del vostre projecte amb les modificacions detectades.
+- Robotx.txt
+- Sitemap.xml
+
+
+## RA6 Disseny responsive i frameworks actuals
+
+[Documentación](/investigacion/P6_Roberts_Yeneviel.md)
+
+### Part 1 - Usabilitat web
+
+#### 1 principis heurístics de Nielsen
+
+- Pàgina web externa que no els compleixi.
+    - Fes un informe sobre una pàgina web que no compleixi els principis de Nielsen. Explica perquè no es compleixen i què faries per solucionar-ho.
+- El teu projecte
+    - Fes el mateix que a l’apartat anterior, però ara amb la teva pàgina web que has estat creant durant el curs. Analitza tots els punts i justifica si es segueixen o no. En cas que no, soluciona les errades que trobeu.
+
+#### 2 Testing 
+
+- El teu projecte
+    - Explica com faries en la teva pàgina web un test A/B. Indica 3 ítems que podries testejar d’aquesta manera.
+- Investiga sobre la utilització de Hotjar, programari per detectar els clics que fan els usuaris.
+
+### Part 2 - Disseny responsive
+
+Refactoritzar tota la web pot ser massa llarg. Per demostrar que domines Sass i el Mobile First, hauràs d'escollir UNA única secció complexa de la teva web (ex: el Header/Navegació, el Footer, la Graella de Productes o la Hero Section) i aplicar-li tot el que saps.
+
+
+#### 1 Instal·lació i Configuració Sass
+
+1. Instal·la Sass al teu projecte (npm add -D sass).
+2. Canvia l'extensió del fitxer d'estils de la secció triada de .css a .scss.
+3. Crea un fitxer global _variables.scss on defineixis els colors corporatius, les mides de font i els espaiats de la teva web.
+
+#### 2 Creació del fitxer css a partir de SCSS/Sass
+
+- Objectiu: Que el codi CSS segueixi l'estructura visual de l'HTML.
+- Substitueix qualsevol color "fix" (hexadecimal) per les variables que has creat al pas anterior.
+- Ha de contenir un condicional
+- Ha de contenir un bucle 
+- Has d’aplicar nitiditat
+
+#### 3  Maquetació Mobile First 
+
+Has de refer la responsivitat de la secció escollida seguint l'estratègia Mobile First:
+
+1. Base (Mòbil): El CSS base (fora de les media queries) ha de ser per a mòbils. Assegura't que la teva secció es veu perfecta en una amplada de 375px. Utilitza unitats relatives (rem, %) en lloc de píxels.
+2. Tablet (min-width: 768px): Afegeix un breakpoint perquè la secció s'adapti a tauletes (ex: passar d'1 columna a 2, o canviar la mida del text).
+3. Desktop (min-width: 1024px): Afegeix un últim breakpoint per a pantalles grans.
+
+- **Nota:** Si has triat el menú de navegació, aquest ha de ser un menú "hamburguesa" (o simplificat) en mòbil i desplegat en escriptori.
+
+#### 4 Verificació
+
+1. Cross-Browser: Obre la teva web en un navegador diferent de l'habitual (si uses Chrome, prova Firefox o Safari). Comprova que la teva secció es veu bé.
+2. Can I Use: Busca a caniuse.com una propietat moderna de CSS que hagis fet servir a la secció (ex: gap, flex, grid, backdrop-filter). Fes una captura de pantalla demostrant que saps verificar si és segur utilitzar-la.
+
+### Entregable 
+- Fitxer PDF amb el nom P6_Cognom_Nom.pdf amb tots els apartats que cal fer informes o explicació.
+- Enllaç a GitHub del vostre projecte amb les modificacions detectades.
