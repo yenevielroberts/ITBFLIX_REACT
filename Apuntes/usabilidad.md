@@ -4,6 +4,8 @@
 
 La usabilidad de un sitio web se refiere a la medida en que un usuario puede interactuar con el lugar de manera efectiva, eficiente y satisfactoria para conseguir sus objetivos. En otras palabras, un sitio web con alta usabilidad es fácil de usar y proporciona una experiencia positiva para sus usuarios.
 
+- Usabilidad: poder hacer una tarea en el menor tiempo posible.
+
 - **Eficacia:** Los usuarios pueden completar las tareas?
 - **Eficiencia:** Cuántos recursos (tiempos/esfuerzo) se necesitan?
 - **Satisfacción:** La experiencia es agradable?

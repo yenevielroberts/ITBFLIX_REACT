@@ -134,6 +134,11 @@ Utilizando la web caniuse.com.
 
 Los navegadores solo entienden CSS. Pero escribir CSS puro en proyectos grandes puede ser repetitivo y difícil de mantener. Los preprocesadores como Sass (Syntactically Awesome Style Sheets) son herramientas que nos permiten escribir código que después se traduce (compila) automáticamente a CSS normal.
 
+Sass es un motor que lee
+
+Lenguajes de Sass:scss y Sass
+
+
 Es fácil confundirse porque la palabra "Sass" se usa para dos cosas diferentes. Aquí tenso la distinción exacta:
 
 - El Motor: se llama Sass. Es el programa que instalas al ordenador (el preprocesador). Su trabajo es leer tus ficheros y traducirlos a CSS.
