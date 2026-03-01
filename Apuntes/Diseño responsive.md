@@ -30,7 +30,7 @@ Antes de entrar en la técnica, es fundamental entender por qué este es el requ
 
 ## Responsive vs adaptive
 
-![alt text](responsiveVSadaptive.png)
+![alt text](responsive/VSadaptive.png)
 
 ## Extrategias de diseño
 
@@ -50,7 +50,7 @@ Cómo empezamos a diseñar? Hay dos filosofías principales:
 
 Las media queries son la tecnología base que hace posible el diseño responsiu. Son "condicionales" dentro de tu CSS (como un if en programación).
 
-![alt text](mediaquery.png)
+![alt text](responsive/mediaquery.png)
 
 - **Breakpoints:** Son los píxeles donde el diseño cambia. Los más habituales son:
 
@@ -108,7 +108,7 @@ Son etiquetas que los fabricantes de navegadores añaden a las propiedades CSS n
 
 #### Ejemplo
 
-![alt text](Vendorprefixes.png)
+![alt text](responsive/Vendorprefixes.png)
 
 Escribir los prefijos a mano hoy en día es un error: es fácil olvidarse uno, ensucia el código y costa de mantener.
 
@@ -148,13 +148,13 @@ Es fácil confundirse porque la palabra "Sass" se usa para dos cosas diferentes.
 
 En CSS puro (antes de las Custom Properties), si querías cambiar el color principal de la web, tenías que buscar y sustituir el código hexadecimal 50 veces. Con Sass, guardas el valor en una variable.
 
-![alt text](vairablescss.png)
+![alt text](responsive/vairablescss.png)
 
 ### Nidificación (Nesting)
 
 En CSS normal, tienes que repetir el selector padre constantemente (.nav, .nav le, .nav le a). En Sass, escribes los estilos siguiendo la jerarquía visual del HTML.
 
-![alt text](cssVSscss.png)
+![alt text](responsive/cssVSscss.png)
 
 
 ### Mixins (funciones reutilizable)
