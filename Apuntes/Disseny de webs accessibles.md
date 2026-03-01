@@ -112,7 +112,7 @@ A continuación, veremos diferentes técnicas para hacer que nuestra página web
 
 Si no pones alto, un lector de pantalla leerá el nombre del archivo (ex: "IMG_2023.jpg"), lo cual es inútil.
 
-![alt text](tecnica1.png)
+![alt text](accessible/tecnica1.png)
 
 #### Técnica 2: Formularios y Etiquetas (Labelos)
 
@@ -120,7 +120,7 @@ Si no pones alto, un lector de pantalla leerá el nombre del archivo (ex: "IMG_2
 
 Lo placeholder NO es una etiqueta. Desaparece cuando escribes y muchos lectores de pantalla no lo leen correctamente como nombre del campo.
 
-![alt text](tecnica2.png)
+![alt text](accessible/tecnica2.png)
 
 
 #### Técnica 3: Botones vs. Divs (Semántica)
@@ -129,7 +129,7 @@ Lo placeholder NO es una etiqueta. Desaparece cuando escribes y muchos lectores 
 
 Un div no recibe el foco del teclado (Tab) y no dice al lector de pantalla "soy un botón". Hacer un div clicable con JS es una mala práctica de accesibilidad (y de programación).
 
-![alt text](tecnica3.png)
+![alt text](accessible/tecnica3.png)
 
 Si realmente tienes que usar un div, tienes que añadir role="*button" y tabindex="0" a pesar de que usara HTML nativo siempre que puedas.
 
@@ -139,7 +139,7 @@ Si realmente tienes que usar un div, tienes que añadir role="*button" y tabinde
 
 Los usuarios de lectores de pantalla a menudo navegan saltando de enlace en enlace. Si escuchan una lista de 10 enlaces que dicen "Clica aquí", no saben donde van.
 
-![alt text](tecnica4.png)
+![alt text](accessible/tecnica4.png)
 
 #### Técnica 5: Idioma de la página
 
@@ -147,7 +147,7 @@ Los usuarios de lectores de pantalla a menudo navegan saltando de enlace en enla
 
 Si no defines el idioma, el lector de pantalla intentará leer texto en catalán con acento inglés (o el que tenga por defecto el usuario), haciéndolo ininteligible.
 
-![alt text](tecnica5.png)
+![alt text](accessible/tecnica5.png)
 
 
 #### Técnica 6: Uso correcto de ARIA (aria-labelo) - Cuando el HTML nativo se queda corto.
@@ -156,7 +156,7 @@ A veces el diseño nos "obliga" a eliminar texto visible (por ejemplo, el icono 
 
 Un botón que solo contiene un icono (SVG o FontAwesome) es invisible para un lector de pantalla si no le damos un nombre.
 
-![alt text](tecnica6.png)
+![alt text](accessible/tecnica6.png)
 
 #### Técnica 7: Contraste de Color (Nivel AA)
 
@@ -164,7 +164,7 @@ Un botón que solo contiene un icono (SVG o FontAwesome) es invisible para un le
 
 Esta es el fallo más común a internet. Para cumplir el nivel AA, el texto normal tiene que tener una ratio de contraste de 4.5:1 respecto al fondo.
 
-![alt text](tecnica7.png)
+![alt text](accessible/tecnica7.png)
 
 
 ## Herramientas de análisis de accesibilidad web
